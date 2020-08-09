@@ -23,6 +23,8 @@ def AlignFOV2p(path_to_FOV, path_to_masks=[], templateID=0, diameter=None, trans
         the path of the folder containing ROI masks. If the value is empty, the code will automatically extract ROI masks using cellpose. If the ROI masks have already obtained, provide the path to the folder can save time.
     templateID: int (default 0)
         choose which FOV image as a template for alignment
+    diameter: neuron diameter.
+        If the value is None, the diameter will be automatically estimated by Cellpose. Otherwise, the neuron mask will be detected based on the given diameter value by Cellpose.
     transformation: str (default 'affine')
         translation: X and Y translation
         rigid_body: translation + rotation
