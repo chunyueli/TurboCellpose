@@ -31,6 +31,7 @@ Besides, the Tmatrices and the registered FOV images as well as the registered R
 * path_to_FOV: path of the folder containing FOV images
 * path_to_masks: path of the folder containing ROIs mask. If the value is empty, the code will automatically extract ROI masks using the cellpose and save the masks under the folder of FOV images ("A5" or "A6"). If the ROI masks have already obtained, providing the path to the ROI masks folder can save time.
 * templateID: choose which FOV image as a template for alignment.  Its default value is zero, indicating the first FOV image.
+* diameter: neuron diameter. If the value is None, the diameter will be automatically estimated by Cellpose. Otherwise, the neuron mask will be detected based on the given diameter value by Cellpose.
 * transformation: str (default 'affine')
   - translation: X and Y translation
   - rigid_body: translation + rotation
