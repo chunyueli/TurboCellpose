@@ -32,11 +32,11 @@ Besides, the Tmatrices and the registered FOV images as well as the registered R
 * path_to_masks: path of the folder containing ROIs mask. If the value is empty, the code will automatically extract ROI masks using the cellpose and save the masks under the folder of FOV images ("A5" or "A6"). If the ROI masks have already obtained, providing the path to the ROI masks folder can save time.
 * templateID: choose which FOV image as a template for alignment.  Its default value is zero, indicating the first FOV image.
 * transformation: str (default 'affine')
-  translation: X and Y translation
-  rigid_body: translation + rotation
-  scaled_rotation: translation + rotation + scaling
-  affine: translation + rotation + scaling + shearing
-  bilinear: non-linear transformation; does not preserve straight lines
+  - translation: X and Y translation
+  - rigid_body: translation + rotation
+  - scaled_rotation: translation + rotation + scaling
+  - affine: translation + rotation + scaling + shearing
+  - bilinear: non-linear transformation; does not preserve straight lines
 
 
 ## Dependencies
