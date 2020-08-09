@@ -1,0 +1,18 @@
+
+# install: conda env create -f environment.yaml
+
+
+name: AlignFOV2p
+channels:
+  - anaconda-fusion
+  - defaults
+dependencies:
+  - pip
+  - python=3.7.4
+  - numpy
+  - scikit-image
+  - matplotlib
+  - pip:
+    - pandas
+    - cellpose
+    - pystackreg
