@@ -7,7 +7,7 @@ Cellpose package is written by Carsen Stringer and Marius Pachitariu. If you wan
 The python version Turboreg is from package pyStackReg (https://github.com/glichtner/pystackreg).
 
 ## System requirements
-This code has been seriously tested on Windows 10. Codes requires Python 3.7.
+This code has been seriously tested on Windows 10. Code requires Python 3.7.
 
 ## Installation
 1. Install environment by running: conda env create -f [your file path to TuroCellpose/]environment.yaml
